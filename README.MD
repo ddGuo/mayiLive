@@ -11,7 +11,7 @@
 创建环境
 conda create --name your_env_name python=3.10
 激活环境
-source activate your_env_name
+conda activate your_env_name
 pip安装需要的包 运行时候有缺失包报错，安装对应的就行了
 pip install -r requirement.txt
 
