@@ -9,5 +9,4 @@ if __name__ == '__main__':
     # 关闭窗口时候不退出程序
     # app.setQuitOnLastWindowClosed(False)
     controller = MainController()
-    # 事件循环
     sys.exit(app.exec())
