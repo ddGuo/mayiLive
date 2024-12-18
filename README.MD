@@ -21,7 +21,8 @@ python main.py
 
 桌面版展示：
 ![img.png](resources/image/img1.png)
-
+任意ws客户端都能连接：
+![img.png](resources/image/img2.png)
 
 # 注意注意
 注意：这只是Python学习研究直播技术的仓库，不是黑客。请勿用于非法用途。一切违法行为后果自负！
