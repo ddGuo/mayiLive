@@ -21,6 +21,9 @@ python main.py
 
 桌面版展示：
 ![img.png](resources/image/img1.png)
+
+需要的可以下载客户端体验，免安装
+
 任意ws客户端都能连接：
 ![img.png](resources/image/img2.png)
 
