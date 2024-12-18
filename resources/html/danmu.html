@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket List Demo</title>
+    <script src="https://cdn.staticfile.net/vue/3.3.4/vue.global.min.js"></script>
+    <!-- <script src="js/vue.global.js"></script> -->
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="message in messages" :key="message.id" style="color: black;">{{ message }}</li>
+        </ul>
+    </div>
+
+    <script>
+        const { createApp } = Vue;
+
+        createApp({
+            data() {
+                return {
+                    messages: []
+                }
+            },
+            created() {
+                const socket = new WebSocket('ws://127.0.0.1:8899'); // 替换成你的WebSocket地址
+
+                socket.onmessage = (event) => {
+                    try {
+                        const message = JSON.parse(event.data); // 假设消息是 JSON 格式
+                        this.addMessage(message);
+                    } catch (e) {
+                        this.addMessage(event.data); // 如果不是 JSON，直接添加原始数据
+                    }
+                };
+            },
+            methods: {
+                addMessage(message) {
+                    this.messages.push(message);
+                    // 保持最新的20条消息
+                    if (this.messages.length > 20) {
+                        this.messages.shift(); // 移除最旧的消息
+                    }
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+<style>
+    #app {
+        width: 280px; 
+        height: 595px; 
+        border: 1px solid #ccc;
+    }
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        width: 280px;
+    }
+    li {
+        width: 280px;
+        word-wrap: break-word;
+    }
+</style>
+</html>

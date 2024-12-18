@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>468</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTip">
+   <string comment="2222" extracomment="1111"/>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>161</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(70, 86, 99);
+border-color: rgb(0, 85, 255);</string>
+    </property>
+    <widget class="QPushButton" name="left_menu_button_1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>130</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width : 0px;
+border-color : rgb(170, 0, 255);
+border-style : solid;
+color : rgb(255, 255, 255);
+background-color: rgb(40, 58, 78);</string>
+     </property>
+     <property name="text">
+      <string>首页菜单</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="left_menu_button_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width : 0px;
+border-color : rgb(170, 0, 255);
+border-style : solid;
+color : rgb(193, 174, 153);</string>
+     </property>
+     <property name="text">
+      <string>数据统计</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="left_menu_button_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>190</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width : 0px;
+border-color : rgb(170, 0, 255);
+border-style : solid;
+color : rgb(193, 174, 153);</string>
+     </property>
+     <property name="text">
+      <string>历史数据</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="left_menu_button_4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>220</y>
+       <width>161</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width : 0px;
+border-color : rgb(170, 0, 255);
+border-style : solid;
+color : rgb(193, 174, 153);</string>
+     </property>
+     <property name="text">
+      <string>帮助中心</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="room_nickname">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>330</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="content">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>701</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(245, 250, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_0">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(240, 250, 255);
+border-top-color: rgb(20, 20, 20);</string>
+     </property>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>581</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>平台选择</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+      <widget class="QCheckBox" name="platform_check_1">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>20</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border : 1px solid rgb(70, 86, 99);
+padding : 3px;</string>
+       </property>
+       <property name="text">
+        <string>抖音</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="platform_check_2">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>20</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border : 1px solid rgb(70, 86, 99);
+padding : 3px;</string>
+       </property>
+       <property name="text">
+        <string>快手</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLineEdit" name="url_address">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>361</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-width : 1px;
+border-color : rgb(70, 86, 99);
+border-style : solid;</string>
+      </property>
+      <property name="text">
+       <string>https://live.douyin.com/646454278948</string>
+      </property>
+      <property name="placeholderText">
+       <string>直播间地址</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="url_save">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>160</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#url_save {
+    border : none;
+	color:#000000;
+	background-color: #ffc7a0;
+	font: 9pt &quot;Microsoft YaHei&quot;;
+}
+QPushButton#url_save:hover {
+    border : none;
+	color: #ffffff;
+	background-color: #391461;
+}</string>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="url_connect">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>160</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#url_connect {
+    border : none;
+	color:#000000;
+	background-color: #ffc7a0;
+	font: 9pt &quot;Microsoft YaHei&quot;;
+}
+QPushButton#url_connect:hover {
+    border : none;
+	color: #ffffff;
+	background-color: #391461;
+}</string>
+      </property>
+      <property name="text">
+       <string>连接</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="url_disconnect">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>160</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#url_disconnect {
+    border : none;
+	color:#000000;
+	background-color: #ffc7a0;
+	font: 9pt &quot;Microsoft YaHei&quot;;
+}
+QPushButton#url_disconnect:hover {
+    border : none;
+	color: #ffffff;
+	background-color: #391461;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>断开</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>681</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>主播功能</string>
+      </property>
+      <widget class="QCheckBox" name="function_1">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border : 1px solid rgb(70, 86, 99);
+padding : 3px;</string>
+       </property>
+       <property name="text">
+        <string>弹幕助手</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_1">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 127);</string>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>200</y>
+        <width>52</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>page1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 0);</string>
+     </property>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>240</y>
+        <width>52</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>page2</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>290</y>
+        <width>52</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>page3</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>850</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(245, 250, 255);
+border-bottom : 1px solid rgb(70, 86, 99);
+</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>设置</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_help"/>
+    <addaction name="action_about"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="action_help">
+   <property name="text">
+    <string>帮助</string>
+   </property>
+  </action>
+  <action name="action_about">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

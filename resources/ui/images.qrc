@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="menu">
+    <file>C:/Users/Administrator/Downloads/home2.png</file>
+    <file>C:/Users/Administrator/Downloads/home1.png</file>
+    <file>C:/Users/Administrator/Downloads/home.png</file>
+  </qresource>
+</RCC>
